@@ -7,11 +7,11 @@ class DoubanGenerator < Rails::Generators::Base
     copy_file("douban.yml", 'config/douban.yml')
     
     route %(# Routes for Douban OAuth
-  scope "/douban" do
-    match '/new' => 'douban#new',           :as => :douban_login
-    match '/callback' => 'douban#callback', :as => :douban_callback
-    match '/logout' => 'douban#destroy',    :as => :douban_logout
-  end)
+        map.with_options :controller => 'douban' do |douban|
+          douban.new        '',  :action  => 'new'
+          douban.callback   '',  :action  => 'callback',
+          douban.logout     '',  :action  => 'logout'
+        end)
   end
   
   def self.source_root
