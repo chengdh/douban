@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{douban-rails2.3}
-  s.version = "0.0.0"
+  s.version = "1.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Yuanyi Zhang chengdh"]
@@ -22,6 +22,7 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "douban-rails2.3.gemspec",
+     "gem.txt",
      "generators/douban/douban_generator.rb",
      "generators/douban/templates/douban.yml",
      "generators/douban/templates/douban_controller.rb",
