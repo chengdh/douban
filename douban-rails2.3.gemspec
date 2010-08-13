@@ -21,6 +21,7 @@ Gem::Specification.new do |s|
      "README",
      "Rakefile",
      "VERSION",
+     "douban-rails2.3.gemspec",
      "generators/douban/douban_generator.rb",
      "generators/douban/templates/douban.yml",
      "generators/douban/templates/douban_controller.rb",
